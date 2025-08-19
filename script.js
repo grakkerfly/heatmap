@@ -1,6 +1,6 @@
 // Copy contract
 function copyContract() {
-  navigator.clipboard.writeText("0xYourContractAddressHere");
+  navigator.clipboard.writeText("0x58e609879b19f90b4fdb3151bc24176b4b935b94");
   alert("Contract copied!");
 }
 
@@ -96,3 +96,4 @@ function savePFP(){
   link.href = pfpCanvas.toDataURL();
   link.click();
 }
+
