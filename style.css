@@ -30,16 +30,16 @@ body, html {
 
 .left-col, .right-col {
   width: 12%;
-  padding: 10px;
+  padding: 20px;
 }
 
 .middle-col {
   width: 76%;
-  padding: 10px;
+  padding: 20px;
 }
 
 .section {
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.8); /* opacidade aumentada */
   margin-bottom: 20px;
   padding: 15px;
   border: 2px solid #444;
@@ -114,7 +114,7 @@ button:hover {
 /* PFP Editor */
 .pfp-editor {
   width: 50%;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
   text-align: center;
   padding: 20px;
   border: 2px solid white;
@@ -151,4 +151,50 @@ button:hover {
   60% { color: #00FF00; }
   80% { color: #0000FF; }
   100% { color: #8B00FF; }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .left-col, .right-col {
+    display: none;
+  }
+
+  .middle-col {
+    width: 100%;
+    padding: 5px;
+    padding-left: 12px;  /* espaçamento lateral extra */
+    padding-right: 12px; /* espaçamento lateral extra */
+  }
+
+  .site-title {
+    font-size: 3em;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .meme-gallery img {
+    width: 48%;
+    height: auto;
+  }
+
+  .gif-list img {
+    width: 100px;
+  }
+
+  .pfp-editor {
+    width: 90%;
+    padding: 15px;
+  }
+
+  #pfp-canvas {
+    width: 100%;
+    height: auto;
+  }
+
+  p, h2, button {
+    font-size: 0.9em;
+  }
 }
