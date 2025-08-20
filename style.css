@@ -118,7 +118,7 @@ button:hover {
   text-align: center;
   padding: 20px;
   border: 2px solid white;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.8);
   box-shadow: 0 0 30px black;
 }
 
@@ -198,3 +198,4 @@ button:hover {
     font-size: 0.9em;
   }
 }
+
